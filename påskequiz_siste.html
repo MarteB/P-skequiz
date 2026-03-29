@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="no">
-<head>
+<html lang="no"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Påskequiz 🐣</title>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;family=Nunito:wght@400;700;800&amp;display=swap" rel="stylesheet">
 <style>
 :root {
   --yellow: #FFD93D;
@@ -225,23 +223,23 @@ body {
 
   <div id="hatch-stage" style="position:relative;width:160px;height:190px;margin-bottom:4px;">
     <svg id="egg-svg" viewBox="0 0 100 130" width="160" height="190" style="overflow:visible;">
-      <ellipse id="egg-body" cx="50" cy="75" rx="36" ry="46" fill="#FFE082" stroke="#F9A825" stroke-width="2.5"/>
+      <ellipse id="egg-body" cx="50" cy="75" rx="36" ry="46" fill="#FFE082" stroke="#F9A825" stroke-width="2.5"></ellipse>
       <g id="egg-cracks" opacity="0">
-        <polyline points="50,38 43,54 55,63 46,78" fill="none" stroke="#8B5E3C" stroke-width="2" stroke-linecap="round"/>
-        <polyline points="50,38 59,56 50,63" fill="none" stroke="#8B5E3C" stroke-width="1.5" stroke-linecap="round"/>
+        <polyline points="50,38 43,54 55,63 46,78" fill="none" stroke="#8B5E3C" stroke-width="2" stroke-linecap="round"></polyline>
+        <polyline points="50,38 59,56 50,63" fill="none" stroke="#8B5E3C" stroke-width="1.5" stroke-linecap="round"></polyline>
       </g>
       <g id="chick" opacity="0">
-        <ellipse cx="50" cy="75" rx="18" ry="16" fill="#FDD835"/>
-        <circle cx="50" cy="52" r="13" fill="#FDD835"/>
-        <circle cx="45" cy="49" r="2.5" fill="#222"/>
-        <circle cx="55" cy="49" r="2.5" fill="#222"/>
-        <polygon points="47,54 53,54 50,59" fill="#FF8F00"/>
-        <ellipse cx="30" cy="74" rx="9" ry="6" fill="#FFEE58" transform="rotate(-20,30,74)"/>
-        <ellipse cx="70" cy="74" rx="9" ry="6" fill="#FFEE58" transform="rotate(20,70,74)"/>
-        <circle cx="43" cy="47" r="3.5" fill="#FFAB91" opacity="0.65"/>
-        <circle cx="57" cy="47" r="3.5" fill="#FFAB91" opacity="0.65"/>
+        <ellipse cx="50" cy="75" rx="18" ry="16" fill="#FDD835"></ellipse>
+        <circle cx="50" cy="52" r="13" fill="#FDD835"></circle>
+        <circle cx="45" cy="49" r="2.5" fill="#222"></circle>
+        <circle cx="55" cy="49" r="2.5" fill="#222"></circle>
+        <polygon points="47,54 53,54 50,59" fill="#FF8F00"></polygon>
+        <ellipse cx="30" cy="74" rx="9" ry="6" fill="#FFEE58" transform="rotate(-20,30,74)"></ellipse>
+        <ellipse cx="70" cy="74" rx="9" ry="6" fill="#FFEE58" transform="rotate(20,70,74)"></ellipse>
+        <circle cx="43" cy="47" r="3.5" fill="#FFAB91" opacity="0.65"></circle>
+        <circle cx="57" cy="47" r="3.5" fill="#FFAB91" opacity="0.65"></circle>
       </g>
-      <ellipse id="egg-top" cx="50" cy="36" rx="26" ry="17" fill="#FFD54F" stroke="#F9A825" stroke-width="2"/>
+      <ellipse id="egg-top" cx="50" cy="36" rx="26" ry="17" fill="#FFD54F" stroke="#F9A825" stroke-width="2"></ellipse>
     </svg>
   </div>
 
@@ -261,13 +259,13 @@ body {
 <button class="admin-fab" id="admin-fab">⚙️</button>
 
 <!-- ADMIN DRAWER -->
-<div class="drawer-bg" id="drawer-bg">
+<div class="drawer-bg open" id="drawer-bg">
   <div class="drawer" id="drawer">
     <div class="drawer-head">
       <h2>⚙️ Rediger quiz</h2>
       <button class="drawer-close" id="drawer-close-btn">✕</button>
     </div>
-    <div id="editor-list"></div>
+    <div id="editor-list"><div class="q-editor"><div class="q-editor-head"><span>Spørsmål 1</span><button class="del-btn">🗑 Slett</button></div><div class="field"><label for="f-hint-0">Ledetråd (vises før spilleren ankommer)</label><textarea rows="2" id="f-hint-0">Gå til parken ved den store fontenen</textarea></div><div class="field"><label for="f-question-0">Spørsmålstekst</label><textarea rows="2" id="f-question-0">Hva er Norges nasjonalblomst?</textarea></div><div class="field"><label for="f-a0-0">Svar A</label><input type="text" id="f-a0-0"></div><div class="field"><label for="f-a1-0">Svar B</label><input type="text" id="f-a1-0"></div><div class="field"><label for="f-a2-0">Svar C</label><input type="text" id="f-a2-0"></div><div class="field"><label>Riktig svar</label><select id="f-correct-0"><option value="0">A</option><option value="1">B</option><option value="2">C</option></select></div><div class="field"><label>GPS-koordinater</label><div class="coord-row"><input type="number" step="any" placeholder="Breddegrad (59.xxx)" id="f-lat-0"><input type="number" step="any" placeholder="Lengdegrad (10.xxx)" id="f-lng-0"></div><div class="coord-help">Finn koordinater: gå til maps.google.com, høyreklikk på stedet og klikk på tallene øverst i menyen.</div></div><div class="field"><label for="f-radius-0">Radius (meter) – spørsmål låses opp innenfor denne avstanden</label><input type="number" step="any" id="f-radius-0"></div></div><div class="q-editor"><div class="q-editor-head"><span>Spørsmål 2</span><button class="del-btn">🗑 Slett</button></div><div class="field"><label for="f-hint-1">Ledetråd (vises før spilleren ankommer)</label><textarea rows="2" id="f-hint-1">Gå til bygningen med de store søylene</textarea></div><div class="field"><label for="f-question-1">Spørsmålstekst</label><textarea rows="2" id="f-question-1">Hvilket år ble Stortinget bygget?</textarea></div><div class="field"><label for="f-a0-1">Svar A</label><input type="text" id="f-a0-1"></div><div class="field"><label for="f-a1-1">Svar B</label><input type="text" id="f-a1-1"></div><div class="field"><label for="f-a2-1">Svar C</label><input type="text" id="f-a2-1"></div><div class="field"><label>Riktig svar</label><select id="f-correct-1"><option value="0">A</option><option value="1">B</option><option value="2">C</option></select></div><div class="field"><label>GPS-koordinater</label><div class="coord-row"><input type="number" step="any" placeholder="Breddegrad (59.xxx)" id="f-lat-1"><input type="number" step="any" placeholder="Lengdegrad (10.xxx)" id="f-lng-1"></div><div class="coord-help">Finn koordinater: gå til maps.google.com, høyreklikk på stedet og klikk på tallene øverst i menyen.</div></div><div class="field"><label for="f-radius-1">Radius (meter) – spørsmål låses opp innenfor denne avstanden</label><input type="number" step="any" id="f-radius-1"></div></div><div class="q-editor"><div class="q-editor-head"><span>Spørsmål 3</span><button class="del-btn">🗑 Slett</button></div><div class="field"><label for="f-hint-2">Ledetråd (vises før spilleren ankommer)</label><textarea rows="2" id="f-hint-2">Finn skulpturen nær vannet</textarea></div><div class="field"><label for="f-question-2">Spørsmålstekst</label><textarea rows="2" id="f-question-2">Hva heter den lengste fjorden i Norge?</textarea></div><div class="field"><label for="f-a0-2">Svar A</label><input type="text" id="f-a0-2"></div><div class="field"><label for="f-a1-2">Svar B</label><input type="text" id="f-a1-2"></div><div class="field"><label for="f-a2-2">Svar C</label><input type="text" id="f-a2-2"></div><div class="field"><label>Riktig svar</label><select id="f-correct-2"><option value="0">A</option><option value="1">B</option><option value="2">C</option></select></div><div class="field"><label>GPS-koordinater</label><div class="coord-row"><input type="number" step="any" placeholder="Breddegrad (59.xxx)" id="f-lat-2"><input type="number" step="any" placeholder="Lengdegrad (10.xxx)" id="f-lng-2"></div><div class="coord-help">Finn koordinater: gå til maps.google.com, høyreklikk på stedet og klikk på tallene øverst i menyen.</div></div><div class="field"><label for="f-radius-2">Radius (meter) – spørsmål låses opp innenfor denne avstanden</label><input type="number" step="any" id="f-radius-2"></div></div><div class="q-editor"><div class="q-editor-head"><span>Spørsmål 4</span><button class="del-btn">🗑 Slett</button></div><div class="field"><label for="f-hint-3">Ledetråd (vises før spilleren ankommer)</label><textarea rows="2" id="f-hint-3"></textarea></div><div class="field"><label for="f-question-3">Spørsmålstekst</label><textarea rows="2" id="f-question-3"></textarea></div><div class="field"><label for="f-a0-3">Svar A</label><input type="text" id="f-a0-3"></div><div class="field"><label for="f-a1-3">Svar B</label><input type="text" id="f-a1-3"></div><div class="field"><label for="f-a2-3">Svar C</label><input type="text" id="f-a2-3"></div><div class="field"><label>Riktig svar</label><select id="f-correct-3"><option value="0">A</option><option value="1">B</option><option value="2">C</option></select></div><div class="field"><label>GPS-koordinater</label><div class="coord-row"><input type="number" step="any" placeholder="Breddegrad (59.xxx)" id="f-lat-3"><input type="number" step="any" placeholder="Lengdegrad (10.xxx)" id="f-lng-3"></div><div class="coord-help">Finn koordinater: gå til maps.google.com, høyreklikk på stedet og klikk på tallene øverst i menyen.</div></div><div class="field"><label for="f-radius-3">Radius (meter) – spørsmål låses opp innenfor denne avstanden</label><input type="number" step="any" id="f-radius-3"></div></div><div class="q-editor"><div class="q-editor-head"><span>Spørsmål 5</span><button class="del-btn">🗑 Slett</button></div><div class="field"><label for="f-hint-4">Ledetråd (vises før spilleren ankommer)</label><textarea rows="2" id="f-hint-4"></textarea></div><div class="field"><label for="f-question-4">Spørsmålstekst</label><textarea rows="2" id="f-question-4"></textarea></div><div class="field"><label for="f-a0-4">Svar A</label><input type="text" id="f-a0-4"></div><div class="field"><label for="f-a1-4">Svar B</label><input type="text" id="f-a1-4"></div><div class="field"><label for="f-a2-4">Svar C</label><input type="text" id="f-a2-4"></div><div class="field"><label>Riktig svar</label><select id="f-correct-4"><option value="0">A</option><option value="1">B</option><option value="2">C</option></select></div><div class="field"><label>GPS-koordinater</label><div class="coord-row"><input type="number" step="any" placeholder="Breddegrad (59.xxx)" id="f-lat-4"><input type="number" step="any" placeholder="Lengdegrad (10.xxx)" id="f-lng-4"></div><div class="coord-help">Finn koordinater: gå til maps.google.com, høyreklikk på stedet og klikk på tallene øverst i menyen.</div></div><div class="field"><label for="f-radius-4">Radius (meter) – spørsmål låses opp innenfor denne avstanden</label><input type="number" step="any" id="f-radius-4"></div></div></div>
     <div class="q-editor">
       <div class="q-editor-head"><span>🥚 Sluttmelding</span></div>
       <div class="field">
@@ -287,34 +285,72 @@ body {
 <script>
 // ── QUIZ DATA ────────────────────────────────────────────────
 var quiz = {
-  winMessage: "Gå tilbake til startpunktet for å hente premien din!",
-  questions: [
+  "winMessage": "Egget finner du her: Om sommeren brukes den ei, om vinteren er den så varm at du kan brenne deg.",
+  "questions": [
     {
-      locationHint: "Gå til parken ved den store fontenen",
-      question: "Hva er Norges nasjonalblomst?",
-      answers: ["Rosen", "Rosenrot", "Bergfrue"],
-      correct: 1,
-      lat: 59.91390,
-      lng: 10.75220,
-      radius: 20
+      "locationHint": "Du kan ikke bade her, men kanskje dyppe dine tær. Vannet kommer når det nærmer seg sommer.",
+      "question": "Hvorfor feirer vi påske?",
+      "answers": [
+        "Påskeharen ble født på skjærtorsdag.",
+        "Jesus døde og sto opp igjen.",
+        "Vi feirer vårens ankomst!"
+      ],
+      "correct": 1,
+      "lat": 59.209643834499275,
+      "lng": 10.942490062331515,
+      "radius": 20
     },
     {
-      locationHint: "Gå til bygningen med de store søylene",
-      question: "Hvilket år ble Stortinget bygget?",
-      answers: ["1866", "1814", "1905"],
-      correct: 0,
-      lat: 59.91300,
-      lng: 10.73960,
-      radius: 20
+      "locationHint": "Her bor bokstaver og ord. Det mest geniale er at du trenger ikke betale!",
+      "question": "Hvem er statsminister i Norge?",
+      "answers": [
+        "Jonas Gahr Søre",
+        "Iver Bjerke",
+        "Erna Solberg"
+      ],
+      "correct": 0,
+      "lat": 59.20660604263543,
+      "lng": 10.941790196717122,
+      "radius": 20
     },
     {
-      locationHint: "Finn skulpturen nær vannet",
-      question: "Hva heter den lengste fjorden i Norge?",
-      answers: ["Hardangerfjorden", "Sognefjorden", "Lysefjorden"],
-      correct: 1,
-      lat: 59.90750,
-      lng: 10.76100,
-      radius: 20
+      "locationHint": "Tre hoder større enn hele deg. Det er ikke langt, du kommer dit i en fei!",
+      "question": "På hvilken måte er Luigi i slekt med Mario?",
+      "answers": [
+        "Storebror",
+        "Fetter",
+        "Toegget tvilling"
+      ],
+      "correct": 2,
+      "lat": 59.20598873526839,
+      "lng": 10.941342239045635,
+      "radius": 20
+    },
+    {
+      "locationHint": "Her har ulende sirener sitt hjem. Drar du hit, kan du også gi Bjørnis en klem.",
+      "question": "Hvor mange elever er det på Cicignon skole?",
+      "answers": [
+        "Cirka 350",
+        "Cirka 700",
+        "Cirka 500"
+      ],
+      "correct": 2,
+      "lat": 59.21051959048852,
+      "lng": 10.9442810623316,
+      "radius": 20
+    },
+    {
+      "locationHint": "Hus nummer fire, tilbake til start. Målet i sikte, du er ferdig snart!",
+      "question": "Hva kommer etter denne linja i Eventyrvisa: \"Ja, kom alle sammen bli med...\"?",
+      "answers": [
+        "\"...vi fjaser og baser av sted.\"",
+        "\"...vi flakser og bakser av sted.\"",
+        "\"...vi kjører med bilen av sted.\""
+      ],
+      "correct": 1,
+      "lat": 59.21053554219298,
+      "lng": 10.942310166031675,
+      "radius": 20
     }
   ]
 };
@@ -809,5 +845,6 @@ function deleteQuestion(i) {
   renderEditor();
 }
 </script>
-</body>
-</html>
+
+
+</body></html>
